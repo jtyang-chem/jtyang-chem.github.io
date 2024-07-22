@@ -11,12 +11,14 @@ A science learner majoring in computational chemistry.
 
 And I love literature.
 > "The greatest wonders are the starry heavens above me and the moral law within me."  - Kant
-
+----
 ## Jitai Yang  
 https://orcid.org/0000-0003-1172-0401
 
+----
+
 Education and qualifications (2)
--
+----
 **Jilin University: Changchun, CN**
 
 2016-09-01 to 2024-06-01 | Ph.D. in Science (Physical Chemistry) (College of Chemistry)
@@ -30,7 +32,7 @@ Education
 Education
  
 Works
----
+----
 - **Jitai Yang**, Yang Cong, You Li, Hui Li,\\
 Machine Learning Approach Based on a Range-Corrected Deep Potential Model for Efficient Vibrational Frequency Computation\\
 _J. Chem. Theory Comput._ **19**, 6366 (2023). [doi:10.1021/acs.jctc.3c00386](https://doi.org/10.1021/acs.jctc.3c00386)
