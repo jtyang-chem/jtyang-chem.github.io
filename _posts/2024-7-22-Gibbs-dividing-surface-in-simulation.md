@@ -1,6 +1,6 @@
-This note include three parts:
+This note includes three parts:
 1. the definition of Gibbs dividing surface
-2. the code for getting profile density from simulation
+2. the code for getting profile density from the simulation
 3. the code for getting the Gibbs dividing surface position by function fitting.
 ## Definition
 
@@ -11,14 +11,16 @@ This note include three parts:
 DOI: 10.1039/b412375a
 
 The profile density can be fitted to the function:
+
 $$
 \frac{\rho(z)}{\rho_B }= \frac 12 [1- \tanh (b(z-c))]
 $$
+
 $\rho_B$ is the density of bulk, and $b, c$ are parameters. The position of Gibbs dividing surface corresponds to the $c$.
 
 ## Get profile density
 
- It's easy with MDAnalysis to get profile density from MD trajectory. MDAnalysis is a friendly python library, however the manual about profile density has little example. Here is the code I calculate the profile density and save it in NumPy binary format.
+ It's easy with MDAnalysis to get profile density from MD trajectory. MDAnalysis is a friendly Python library, however, the manual about profile density has few examples. Here is the code I calculate the profile density and save it in NumPy binary format.
 
 - Some notes:
 	- The trajectory object must have charge info, here I made a fake one.
@@ -82,11 +84,13 @@ def main():
 
 In practical, we can make $\rho_B$ also a parameter, and get the value of Gibbs dividing surface $c$ by fitting. 
 The profile density shape is often like a trapezium in simulation. We can make the function for fitting as this
+
 $$
     {\rho(z)} = \frac {\rho_B }2 \left[1- \tanh \left(b\|z-z_0\|-c\right)\right]
 $$
-$z_0$ is the position of bulk center, usually close to the box center.
-This code use `curve_fit` module in `scipy` for fitting.
+
+$z_0$ is the position of the bulk center, usually close to the box center.
+This code uses `curve_fit` module in `scipy` for fitting.
 
 ``` python
 from MDAnalysis.analysis.rms import rmsd
