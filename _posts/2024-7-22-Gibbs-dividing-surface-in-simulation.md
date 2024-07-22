@@ -16,7 +16,7 @@ $$
 \frac{\rho(z)}{\rho_B }= \frac 12 [1- \tanh (b(z-c))]
 $$
 
-$\rho_B$ is the density of bulk, and $b, c$ are parameters. The position of Gibbs dividing surface corresponds to the $c$.
+$$\rho_B$$ is the density of bulk, and $$b, c$$ are parameters. The position of Gibbs dividing surface corresponds to the $$c$$.
 
 ## Get profile density
 
@@ -24,7 +24,9 @@ $\rho_B$ is the density of bulk, and $b, c$ are parameters. The position of Gibb
 
 - Some notes:
 	- The trajectory object must have charge info, here I made a fake one.
-	- The output unit is $g/\text{cm}^3$  
+	- The output unit is $$g/\text{cm}^3$$
+
+
 ``` python 
 from MDAnalysis.analysis.rms import rmsd
 from MDAnalysis.topology import guessers
@@ -82,14 +84,14 @@ def main():
 
 ## Fitting
 
-In practical, we can make $\rho_B$ also a parameter, and get the value of Gibbs dividing surface $c$ by fitting. 
+In practical, we can make $$\rho_B$$ also a parameter, and get the value of Gibbs dividing surface $$c$$ by fitting. 
 The profile density shape is often like a trapezium in simulation. We can make the function for fitting as this
 
 $$
     {\rho(z)} = \frac {\rho_B }2 \left[1- \tanh \left(b\|z-z_0\|-c\right)\right]
 $$
 
-$z_0$ is the position of the bulk center, usually close to the box center.
+$$z_0$$ is the position of the bulk center, usually close to the box center.
 This code uses `curve_fit` module in `scipy` for fitting.
 
 ``` python
