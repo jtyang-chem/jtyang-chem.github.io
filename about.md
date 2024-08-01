@@ -40,6 +40,10 @@ Education
 
 ----
 
+- **Jitai Yang**, Ke Li, Jia Liu, Jia Nie, Hui Li\\
+A rotational/roto-translational constraint method for condensed matter\\
+_J. Chem. Phys._ **161**, 054101 (2024). [doi:10.1063/5.0216913](https://doi.org/10.1063/5.0216913)
+
 - **Jitai Yang**, Yang Cong, You Li, Hui Li,\\
 Machine Learning Approach Based on a Range-Corrected Deep Potential Model for Efficient Vibrational Frequency Computation\\
 _J. Chem. Theory Comput._ **19**, 6366 (2023). [doi:10.1021/acs.jctc.3c00386](https://doi.org/10.1021/acs.jctc.3c00386)
